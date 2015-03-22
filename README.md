@@ -34,9 +34,10 @@ frequency bands (<100Hz).
 Output
 ------
 Each recording generates 3 files, all named using the time and date in the following format:
-<date>.<time>-000.avi  (video)
-<date>.<time>.imu.txt  (imu)
-<date>.<time>.gps.txt  (gps)
+
+date.time-000.avi  (video)
+date.time.imu.txt  (imu)
+date.time.gps.txt  (gps)
 
 Example: 
 13-01-2014.11-10-000.avi (video)
