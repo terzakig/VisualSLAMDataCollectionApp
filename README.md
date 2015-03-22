@@ -45,13 +45,13 @@ Example:
 13-01-2014.11-10.gps.txt (gps)
 
 Files:
-1. The video file (avi).
+a) The video file (avi).
 
-2. The GPS locations: Each line is marked with a frame identifier (actual frame counting starts from 1). The format is (comma delimited):
+b) The GPS locations: Each line is marked with a frame identifier (actual frame counting starts from 1). The format is (comma delimited):
 
 FrameIndex, character 'V'(Valid signal) or, 'I'(Invalid signal), Longitude (degrees), Latitude (degrees), Speed over ground (knots), Course over ground (degrees).
 
-3. IMU readings: Again, the readings are framestamped and the format is:
+c) IMU readings: Again, the readings are framestamped and the format is:
 
 FrameIndex, acceleration1, acceleration2, acceleration3, angular rate1, angular rate2, angular rate3
 
