@@ -1,7 +1,20 @@
-﻿//////////////////////////////////////// GPS Receiver class ////////////////////////////////////////////////
-///                                   Inherits NMEA receiver                                              //
-///                                   
-// George Terzakis 2011-13 - Plymouth University
+﻿/////////////////// Data Collection of Video sequences and framestamped IMU and GPS readings ///////////////////////////////////
+//
+//////////////////////////////////////// GPS Receiver class ////////////////////////////////////////////////
+// 
+// This class inherits NMEA receiver. It reads "GPRMC" messages from the serial port and stores GPS position, velocity and speed over ground data
+//
+
+// Copyright (C) 2012 George Terzakis
+// This program is free software; you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation; either version 2 of the License, or
+// (at your option) any later version.
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+// GNU General Public License for more details.
+
 
 
 using System;

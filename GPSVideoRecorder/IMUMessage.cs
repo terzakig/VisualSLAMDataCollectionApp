@@ -1,4 +1,22 @@
-﻿using System;
+﻿/////////////////// Data Collection of Video sequences and framestamped IMU and GPS readings ///////////////////////////////////
+//
+/////////////////////////////////  Class IMUMessage //////////////////////////////////////
+// 
+// This is the data structure that SiIMU02 sends over the serial port at a frequency of roughly 250 Hz
+// Certain fields have a fixed value (such as the header).
+//
+// To "unwrap" the message, certain conversions from raw bytes to floating point numbers where necessary and pointers where used (hence the "unsafe" code segments)
+
+// Copyright (C) 2012 George Terzakis
+// This program is free software; you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation; either version 2 of the License, or
+// (at your option) any later version.
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+// GNU General Public License for more details.
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,8 +25,6 @@ using System.Runtime.InteropServices;
 namespace GPSVideoRecorder
 {
 
-
-   
 
     //[StructLayout(LayoutKind.Explicit)] 
 
